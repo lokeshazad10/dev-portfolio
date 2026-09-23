@@ -1,16 +1,70 @@
-# React + Vite
+# Dev Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern developer portfolio website built with React, Vite, and Tailwind CSS. The project is designed to showcase projects, skills, education, and contact details with a premium, animated UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fully responsive portfolio landing page
+- Glassmorphism-inspired dark/light theme toggle
+- Animated hero section and marquee skill list
+- Project cards with hover tilt effects
+- About, education, work, and contact sections
+- Contact form UI with success state interaction
+- Custom cursor and magnetic interaction effects
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS 4
+- Lucide React icons
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+
+   ```bash
+   npm run build
+   ```
+
+4. Preview the production build:
+
+   ```bash
+   npm run preview
+   ```
+
+## Project Structure
+
+```bash
+src/
+├── App.jsx
+├── index.css
+├── main.jsx
+├── assets/
+├── components/
+│   ├── CustomCursor.jsx
+│   ├── MagneticButton.jsx
+│   └── TiltCard.jsx
+└── pages/
+    └── Home.jsx
+```
+
+## Notes
+
+This portfolio is structured as a single-page personal brand website and can be customized by editing the content arrays and sections inside [src/pages/Home.jsx](src/pages/Home.jsx).
+
+## License
+
+This project is for personal portfolio use and is open for customization.
