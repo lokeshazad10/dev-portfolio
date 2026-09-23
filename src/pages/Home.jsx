@@ -14,6 +14,7 @@ import {
   SunMedium,
   MoonStar
 } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import CustomCursor from '../components/CustomCursor';
 import MagneticButton from '../components/MagneticButton';
 import TiltCard from '../components/TiltCard';
@@ -25,7 +26,7 @@ const PROJECTS = [
     description: ' This project is a cinematic, Marvel-inspired animated landing page built with HTML, CSS, and JavaScript. It features interactive character transitions, animated text, layered image effects, and a smooth hero section that changes between Spider-Man, Iron Man, Black Panther, Hulk, and Loki using GSAP and Shery.js. Itʼs a stylish static frontend demo focused on motion design and visual storytelling rather than backend functionality. ',
     tech: ['HTML5', 'CSS3', 'Shery js', 'GSAP'],
     liveUrl: 'https://marvel-animated-website.vercel.app/',
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/lokeshazad10/Marvel-Animated-Website',
   },
   {
     title: 'Pasta Maniac',
@@ -33,7 +34,7 @@ const PROJECTS = [
     description: 'High-performance animated food brand showcase with silky GSAP scroll interactions, custom product showcases, and interactive menus.',
     tech: ['HTML5', 'CSS3', 'GSAP', 'JavaScript'],
     liveUrl: 'https://pastamaniac.netlify.app/',
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/lokeshazad10/restaurant-website',
   },
   {
     title: 'Shop.co eCommerce',
@@ -41,7 +42,7 @@ const PROJECTS = [
     description: 'Comprehensive e-commerce application featuring product filtering, cart persistence, fluid UI states, and responsive checkout flows.',
     tech: ['React.js', 'Tailwind CSS', 'Context API'],
     liveUrl: 'https://shopco10.vercel.app/',
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/lokeshazad10/E-Commerce-Website',
   },
 ];
 
@@ -318,7 +319,7 @@ export default function Home() {
                       className={`p-2 rounded-full transition ${isDarkMode ? 'bg-zinc-800/80 text-zinc-400 hover:text-white hover:bg-zinc-700' : 'bg-zinc-100 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200'}`}
                       aria-label="GitHub Repository"
                     >
-                      <RotateCcw className="w-4 h-4" />
+                      <FaGithub/>
                     </a>
                     <a
                       href={project.liveUrl}
@@ -373,7 +374,7 @@ export default function Home() {
               <div className="space-y-4 text-sm">
                 <div className={`flex items-center gap-3 ${isDarkMode ? 'text-zinc-300' : 'text-zinc-700'}`}>
                   <Mail className="w-4 h-4 text-indigo-400" />
-                  <span>lokeshazad.dev@gmail.com</span>
+                  <span>lokeshazad10@gmail.com</span>
                 </div>
                 <div className={`flex items-center gap-3 ${isDarkMode ? 'text-zinc-300' : 'text-zinc-700'}`}>
                   <Terminal className="w-4 h-4 text-indigo-400" />
@@ -384,22 +385,22 @@ export default function Home() {
               {/* Socials */}
               <div className="flex items-center gap-3 mt-8">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/lokeshazad10"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`p-3 rounded-full transition ${isDarkMode ? 'bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700' : 'bg-zinc-100 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200'}`}
                   aria-label="GitHub"
                 >
-                  <RotateCcw className="w-4 h-4" />
+                  <FaGithub />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/lokeshazad10/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`p-3 rounded-full transition ${isDarkMode ? 'bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700' : 'bg-zinc-100 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200'}`}
                   aria-label="LinkedIn"
                 >
-                  <RotateCcw className="w-4 h-4" />
+                  <FaLinkedin />
                 </a>
                 <a
                   href="https://instagram.com/developer_lokesh"
@@ -408,7 +409,7 @@ export default function Home() {
                   className={`p-3 rounded-full transition ${isDarkMode ? 'bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700' : 'bg-zinc-100 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200'}`}
                   aria-label="Instagram"
                 >
-                  <RotateCcw className="w-4 h-4" />
+                  <FaInstagram />
                 </a>
               </div>
             </div>
